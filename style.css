@@ -84,7 +84,6 @@ a:hover {
 
 
 header > p {
-  font-size: 48px;
   text-transform: capitalize;
   color: #eee;
   opacity: 0.75;
@@ -107,7 +106,7 @@ header > p {
     max-height: 100vh;
   }
   header> p {
-    font-size: 36px;
+    font-size: 48px;
   }
 }
 
