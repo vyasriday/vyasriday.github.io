@@ -211,18 +211,18 @@ h2:after {
   color: #000000db;
 }
 
-#contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #4039391a;
-  padding-bottom: 50px;
+@media(min-width: 1400px) {
+  #work {
+    width: 100%
+  }
+  #work > .work-wrapper {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .work-item {
+    max-width: 30%; 
+  }
 }
-
-.form-wrapper {
-  margin-top: 2rem;
-}
-
 footer {
   background-color: #333;
 }
@@ -230,5 +230,7 @@ footer {
 footer > p {
   text-align: center;
   padding-top: 25px;
+  color: #fdfdfd;
+  font-size: 1rem;
 }
 
