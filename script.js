@@ -4,16 +4,15 @@ const anchorInHeader = document.getElementsByClassName('header-links');
 const headerImage = document.getElementById('hero-icon');
 const projectsItems = document.getElementsByClassName('work-item');
 
-function changeLinkTextColorinHeader(links, color, fontWeight) {
+function changeLinkTextColorinHeader(color) {
   
-  for(var i = 0; i< links.length; i++) {
-    links[i].style.color = color;
-    links[i].style.fontWeight = fontWeight;
+  for(var i = 0; i< anchorInHeader.length; i++) {
+    anchorInHeader[i].style.color = color;
   } 
 
 }
 
-function chnageHeaderIconSize(height, width, top, padding) {
+function changeHeaderIconSize(height, width, top, padding) {
   headerImage.style.height = `${height}px`;
   headerImage.style.width = `${width}px`;
   headerImage.style.top = `${top}px`;
@@ -24,13 +23,13 @@ function fixNav() {
 
   if (window.scrollY >= header.scrollHeight - 150) {
     navigation.classList.add('fixed-nav');
-    changeLinkTextColorinHeader(anchorInHeader, '#fff', 600);
-    chnageHeaderIconSize(80, 80, 0, 5);
+    changeLinkTextColorinHeader('#fff');
+    changeHeaderIconSize(80, 80, 0, 5);
     
   } else {
     navigation.classList.remove('fixed-nav');
-    changeLinkTextColorinHeader(anchorInHeader, 'white', 'unset');
-    chnageHeaderIconSize(100, 100, 10, 0);
+    changeLinkTextColorinHeader('white');
+    changeHeaderIconSize(100, 100, 10, 0);
   }
 
 }
