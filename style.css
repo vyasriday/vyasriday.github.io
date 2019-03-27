@@ -9,6 +9,17 @@ body {
   font-family: 'PT Sans', sans-serif;
   font-size: 16px;
 }
+
+@keyframes changeContent {
+  from {
+    content: "UI";
+  }
+  to {
+    content: "UX";
+  }
+}
+
+
 /*  Header Section Starts Here */
 header {
   height: 100vh;
@@ -27,8 +38,18 @@ span#name {
   text-transform: uppercase;
 }
 
+
 span.skill {
   color: #e27525;
+}
+
+#skill-2:after {
+  animation: changeContent 3s ease-in-out 500ms infinite alternate running;
+  display: inline-block;
+  content: "UI";
+  color: #e27525;
+ 
+
 }
 
 ul#navigation {
@@ -89,6 +110,7 @@ header > p {
   opacity: 0.75;
   font-size: 3rem;
   text-align: center;
+  overflow-x: hidden;
 }
 
 /*  Header Section Ends Here */
@@ -137,14 +159,21 @@ h2:after {
   display: flex;
   flex-direction: column;
   box-shadow: 0 5px 12px 2px rgba(160, 160, 160, 0.7);
-  transition: all 0.5s ease-in-out  ;
+  transform: rotateX(-15deg) rotateY(-8deg);
+  transition: transform 400ms ease-in-out 0.3s, background-color 600ms ease-out 0.75s;
   cursor: pointer;
+  outline: none;
+  text-decoration: none;
   
 }
 
 .work-wrapper > a:hover {
-  transform: scale(1.05) ;
+  transform: scale(1.1) rotateX(0deg) rotateY(0deg);
   background-color:  #f4ae5454;
+  animation-name: slideText;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+
 }
 
 .work-item > .title {
@@ -259,5 +288,7 @@ footer > p {
 
   footer > p {
     font-size: 1.3rem;
+    padding-bottom: 10px;
   }
 }
+

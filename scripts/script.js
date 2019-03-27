@@ -2,7 +2,6 @@ const header = document.getElementsByTagName('header')[0];
 const navigation = document.getElementById('navigation');
 const anchorInHeader = document.getElementsByClassName('header-links');
 const headerImage = document.getElementById('hero-icon');
-const projectsItems = document.getElementsByClassName('work-item');
 
 function changeLinkTextColorinHeader(color) {
   
@@ -37,7 +36,8 @@ function fixNav() {
 function moveTop() {
   header.scrollIntoView({behavior: "smooth"});
 }
+
+
 window.addEventListener('scroll', fixNav)
 
 headerImage.addEventListener('click', moveTop);
-
