@@ -48,6 +48,7 @@ span.skill {
   display: inline-block;
   content: "UI";
   color: #e27525;
+  will-change: contents;
  
 
 }
