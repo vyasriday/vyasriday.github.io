@@ -203,9 +203,10 @@ footer {
 
 footer > p {
   text-align: center;
-  padding-top: 25px;
+  padding: 1.4rem 0;
   color: #fdfdfd;
   font-size: 1rem;
+
 }
 
 /*  Ipad Pro Specific Style */
