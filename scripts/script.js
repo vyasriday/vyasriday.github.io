@@ -40,3 +40,4 @@ function moveTop() {
 window.addEventListener('scroll', fixNav)
 
 headerImage.addEventListener('click', moveTop);
+
