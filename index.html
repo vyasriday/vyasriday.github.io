@@ -21,76 +21,77 @@
 </head>
 
 <body>
-  <header>
-    <ul id="navigation">
-      <img title="Hridayesh Sharma" src="./resources/images/header-img.jpg" id="hero-icon">
-      <li><a class="header-links" target="_blank" title="My Work" href="https://www.github.com/vyasriday">Code</a></li>
-      <li><a class="header-links" target="_blank" title="LinkedIn Profile"
-          href="https://www.linkedin.com/in/hridayesh-sharma">Career</a></li>
-      <li><a class="header-links" href="./resources/resume/Hridayesh_Sharma.pdf" target="_blank"
-          title="Download Resume">Resume</a></li>
-    </ul>
+  <header role="banner">
+      <ul id="navigation">
+        <img title="Hridayesh Sharma" src="./resources/images/header-img.jpg" id="hero-icon">
+        <li><a class="header-links" target="_blank" title="My Work" href="https://www.github.com/vyasriday">Code</a></li>
+        <li><a class="header-links" target="_blank" title="LinkedIn Profile"
+            href="https://www.linkedin.com/in/hridayesh-sharma">Career</a></li>
+        <li><a class="header-links" href="./resources/resume/Hridayesh_Sharma.pdf" target="_blank"
+            title="Download Resume">Resume</a></li>
+      </ul>
     <p class="header-title">
       Hi, I'm <span id="name">Hridayesh Sharma</span> <br />
       A <span class="skill" id="skill-1">JavaScript</span> Engineer and <span class="skill" id="skill-2"></span>
       Enthusiast.
     </p>
   </header>
-  <section id="work">
-    <h2> Projects </h2>
-    <div class="work-wrapper">
-      <a href="https://vyasriday.github.io/read-it" target="_blank" title="Go To App">
-        <div class="work-item">
-          <h3 class="title">Read It</h3>
-          <p class="description">
-            Read It is an Angular app that let's you read top headlines from around the world.
-            The App uses <code>newsapi.org</code> api to fetch data.
-          </p>
-        </div>
-      </a>
-      <a href="https://vyasriday.github.io/react-pick-color" target="_blank" title="Go To App">
-        <div class="work-item">
-          <h3 class="title">Pick Color</h3>
-          <p class="description">
-            Pick Color is a simple React app which is built using native state management in React. It let's you change
-            background
-            color of the page.
-          </p>
-        </div>
-      </a>
-      <a href="https://hriday-teleapp.herokuapp.com/" target="_blank" title="Go To App">
-        <div class="work-item">
-          <h3 class="title">TeleApp</h3>
-          <p class="description">
-            TeleApp is an express app where you can search for various movies and television shows. The app is built
-            using omdb api.
-          </p>
-        </div>
-      </a>
-      <a href="https://hsocietyisro.github.io/" target="_blank" title="Go To App">
-        <div class="work-item">
-          <h3 class="title">Landscape Change Monitoring System</h3>
-          <p class="description">A web app where you can look for changes in the Indian landscape that happened over the
-            years. The app is based on Bhuvan Maps.</p>
-        </div>
-      </a>
-      <a href="https://vyasriday.github.io/FlickerApp/" target="_blank" title="Go To App">
-        <div class="work-item">
-          <h3 class="title">FlickerApp</h3>
-          <p class="description">FlickerApp is an image gallery where you can find various images. The app consumes
-            flicker api to show results.</p>
-        </div>
-      </a>
-      <a href="https://vyasriday.github.io/web-ui-components" target="_blank" title="Go To App">
-        <div class="work-item">
-          <h3 class="title">Web UI Components</h3>
-          <p class="description">Web UI Components is a collection of different User Interfaces which I do to improve my
-            UI skills. The components are developed as web components as well in HTML and CSS. It's still in WIP.</p>
-        </div>
-      </a>
-    </div>
-  </section>
-  <footer>
+  <main role="main">
+    <section id="work">
+      <h2> Projects </h2>
+      <div class="work-wrapper">
+          <a href="https://watch-next.netlify.com/" target="_blank" title="Go To App">
+            <div class="work-item">
+              <h3 class="title">What Next</h3>
+              <p class="description">
+                What Next is a web app that built using vue.js and TMDB api. It shows you latest tv shows and movies and let's you search them.
+              </p>
+            </div>
+          </a>
+        <a href="https://vyasriday.github.io/read-it" target="_blank" title="Go To App">
+          <div class="work-item">
+            <h3 class="title">Read It</h3>
+            <p class="description">
+              Read It is an Angular app that let's you read top headlines from around the world.
+              The App uses <code>newsapi.org</code> api to fetch data.
+            </p>
+          </div>
+        </a>
+        <a href="https://vyasriday.github.io/react-pick-color" target="_blank" title="Go To App">
+          <div class="work-item">
+            <h3 class="title">Pick Color</h3>
+            <p class="description">
+              Pick Color is a simple React app which is built using native state management in React. It let's you change
+              background
+              color of the page.
+            </p>
+          </div>
+        </a>
+        <a href="https://hsocietyisro.github.io/" target="_blank" title="Go To App">
+          <div class="work-item">
+            <h3 class="title">Landscape Change Monitoring System</h3>
+            <p class="description">A web app where you can look for changes in the Indian landscape that happened over the
+              years. The app is based on Bhuvan Maps.</p>
+          </div>
+        </a>
+        <a href="https://vyasriday.github.io/FlickerApp/" target="_blank" title="Go To App">
+          <div class="work-item">
+            <h3 class="title">FlickerApp</h3>
+            <p class="description">FlickerApp is an image gallery where you can find various images. The app consumes
+              flicker api to show results.</p>
+          </div>
+        </a>
+        <a href="https://vyasriday.github.io/web-ui-components" target="_blank" title="Go To App">
+          <div class="work-item">
+            <h3 class="title">Web UI Components</h3>
+            <p class="description">Web UI Components is a collection of different User Interfaces which I do to improve my
+              UI skills. The components are developed as web components as well in HTML and CSS. It's still in WIP.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer role="contentinfo">
     <p>&copy; Hridayesh Sharma 2019 - India </p>
   </footer>
   <script src="./scripts/script.js"></script>
