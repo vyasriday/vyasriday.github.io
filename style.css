@@ -199,15 +199,10 @@ h2:after {
 
 footer {
   background-color: #333;
-}
-
-footer > p {
   text-align: center;
-  padding: 1.4rem 0;
-  color: #fdfdfd;
-  font-size: 1rem;
-
 }
+
+
 
 /*  Ipad Pro Specific Style */
 @media only screen 
