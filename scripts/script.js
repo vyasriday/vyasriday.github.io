@@ -20,7 +20,7 @@ function changeHeaderIconSize(height, width, top, padding) {
 
 function fixNav() {
 
-  if (window.scrollY >= header.scrollHeight - 150) {
+  if (window.scrollY >= header.scrollHeight - 200) {
     navigation.classList.add('fixed-nav');
     changeLinkTextColorinHeader('#fff');
     changeHeaderIconSize(80, 80, 0, 5);

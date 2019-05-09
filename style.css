@@ -189,10 +189,10 @@ h2:after {
 
 .work-item > .description {
   text-align: justify;
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding: 2px;
   text-transform: capitalize;
-  letter-spacing: 1px;
+  letter-spacing: 0.75px;
   line-height: 1.5rem;
   color: #000000db;
 }
@@ -200,6 +200,7 @@ h2:after {
 footer {
   background-color: #333;
   text-align: center;
+  padding: 10px 0;
 }
 
 
