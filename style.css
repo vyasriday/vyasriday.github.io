@@ -170,7 +170,6 @@ h2:after {
 
 .work-wrapper > a:hover {
   transform: scale(1.1) rotateX(0deg) rotateY(0deg);
-  background-color:  #f4ae5454;
   animation-name: slideText;
   animation-duration: 3s;
   animation-iteration-count: 1;
