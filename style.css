@@ -151,7 +151,7 @@ h2:after {
   justify-content: center;
 }
 
-.work-wrapper > a {
+.work-wrapper > div {
   min-height: 250px;
   min-width: 300px;
   max-width: 325px;
@@ -160,41 +160,81 @@ h2:after {
   display: flex;
   flex-direction: column;
   box-shadow: 0 5px 12px 2px rgba(160, 160, 160, 0.7);
-  transform: rotateX(-15deg) rotateY(-8deg);
-  transition: transform 400ms ease-in-out 0.3s, background-color 600ms ease-out 0.75s;
-  cursor: pointer;
+  /* transform: rotateX(-15deg) rotateY(-8deg);
+  transition: transform 400ms ease-in-out 0.3s, background-color 600ms ease-out 0.75s; */
   outline: none;
   text-decoration: none;
   
 }
-
-.work-wrapper > a:hover {
+/* 
+.work-wrapper > div:hover {
   transform: scale(1.1) rotateX(0deg) rotateY(0deg);
   animation-name: slideText;
   animation-duration: 3s;
   animation-iteration-count: 1;
 
-}
+} */
 
 .work-item > .title {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   font-size: 1.3rem;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   min-height: 3rem;
   color: darkorange;
 }
 
+.work-item > .title:after {
+  display: block;
+  height: 1.5px;
+  background-color: #6d655ede;
+  content: " ";
+  width: 60px;
+  margin: 0 auto;
+  margin-top: 0.75rem;
+}
+
 .work-item > .description {
   text-align: justify;
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding: 2px;
   text-transform: capitalize;
   letter-spacing: 0.75px;
-  line-height: 1.5rem;
+  line-height: 1.4rem;
   color: #000000db;
 }
+
+.extra {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tech-item {
+  padding: 4px 6px;
+  margin: 2px 0.25rem;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #ff98007d;
+}
+
+.app-url {
+  width: auto;
+  margin: 0 auto;
+  background: #ff4242de;
+  margin-top: 8px;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+
 
 footer {
   background-color: #333;
@@ -251,7 +291,7 @@ footer {
     letter-spacing: 2px;
     font-size: 1.25rem;
   }
-  .work-wrapper > a {
+  .work-wrapper > div {
     margin: 10px;
   }
 }
@@ -265,12 +305,12 @@ footer {
     padding-left: 4%;
     padding-right: 4%;
   }
-  .work-wrapper > a{
+  .work-wrapper > div{
     min-width: 30%; 
     max-width: 30%;
     min-height: 300px;  
   }
-  .work-wrapper > a > .work-item  {
+  .work-wrapper > div > .work-item  {
     width: 100%;
     height: 100%;
   } 

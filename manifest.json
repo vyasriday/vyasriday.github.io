@@ -11,11 +11,6 @@
             "src": "/resources/images/icons/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
-        },
-        {
-            "src": "/resources/images/icons/icon-144x144",
-            "sizes": "144x144",
-            "type": "image/png"
         }
     ],
     "theme_color": "rgb(226, 117, 37)",
