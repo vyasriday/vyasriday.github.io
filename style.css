@@ -208,12 +208,13 @@ h2:after {
 .extra {
   margin-top: 1rem;
   display: flex;
-  flex-direction: column;
 }
 
 .tech-stack {
   display: flex;
   flex-wrap: wrap;
+  min-width: 66%;
+  max-width: 66%;
 }
 
 .tech-item {
@@ -226,12 +227,13 @@ h2:after {
 }
 
 .app-url {
+  font-size: 1rem;
   width: auto;
   margin: 0 auto;
-  background: #ff4242de;
-  margin-top: 8px;
+  background: #ff3b3bde;
   padding: 2px 6px;
   border-radius: 4px;
+  max-height: 24px;
 }
 
 
