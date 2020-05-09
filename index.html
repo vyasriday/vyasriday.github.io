@@ -1,46 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="rgb(226, 117, 37)" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/resources/images/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/resources/images/icons/favicon-16x16.png"
+    />
+    <link
+      rel="mask-icon"
+      href="/resources/images/icons/safari-pinned-tab.svg"
+      color="#82efed"
+    />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <!-- apple ios support -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/resources/images/icons/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-status-bar" content="rgb(226, 117, 37)" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Hridayesh Sharma, Front End Engineer</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="rgb(226, 117, 37)">
-  <link rel="manifest" href="./manifest.json">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="/resources/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/resources/images/icons/favicon-16x16.png">
-  <link rel="mask-icon" href="/resources/images/icons/safari-pinned-tab.svg" color="#82efed">
-  <meta name="msapplication-TileColor" content="#2d89ef">
-  <!-- apple ios support -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/resources/images/icons/apple-touch-icon.png">
-  <meta name="apple-mobile-web-app-status-bar" content="rgb(226, 117, 37)">
-  <link rel="stylesheet" href="./style.css">
-  <title>Hridayesh Sharma, Front End Engineer</title>
-
-
-
-</head>
-
-<body>
-  <header role="banner">
+  <body>
+    <header role="banner">
       <ul id="navigation">
-        <img title="Hridayesh Sharma" src="./resources/images/header-img.jpg" id="hero-icon">
-        <li><a class="header-links" href="https://www.github.com/vyasriday">Code</a></li>
-        <li><a class="header-links" href="https://www.linkedin.com/in/hridayesh-sharma">Career</a></li>
-        <li><a class="header-links" href="https://dev.to/_hridaysharma">Blog</a></li>
+        <img
+          title="Hridayesh Sharma"
+          src="./resources/images/header-img.jpg"
+          id="hero-icon"
+        />
+        <li>
+          <a class="header-links" href="https://www.github.com/vyasriday"
+            >Code</a
+          >
+        </li>
+        <li>
+          <a
+            class="header-links"
+            href="https://www.linkedin.com/in/hridayesh-sharma"
+            >Career</a
+          >
+        </li>
+        <li>
+          <a class="header-links" href="https://dev.to/_hridaysharma">Blog</a>
+        </li>
       </ul>
-    <p class="header-title">
-      Hi, I'm <span id="name">Hridayesh Sharma</span> <br />
-      A <span class="skill" id="skill-1">JavaScript</span> Engineer and <span class="skill" id="skill-2"></span>
-      Enthusiast.
-    </p>
-  </header>
-  <main role="main">
-    <section id="work">
-      <h2> Projects </h2>
-      <div class="work-wrapper">
-        <div>
+      <p class="header-title">
+        Hi, I'm <span id="name">Hridayesh Sharma</span> <br />
+        A <span class="skill" id="skill-1">JavaScript</span> Engineer and
+        <span class="skill" id="skill-2"></span>
+        Enthusiast.
+      </p>
+    </header>
+    <main role="main">
+      <section id="work">
+        <h2>Projects</h2>
+        <div class="work-wrapper">
+          <!-- <div>
           <div class="work-item">
             <h3 class="title">todos</h3>
             <p class="description">
@@ -57,80 +88,94 @@
               </a>
             </div>
           </div>
-        </div>
-        <div>
-          <div class="work-item">
-            <h3 class="title">Watch Next</h3>
-            <p class="description">
-              Watch Next is a web app that is built using vue.js and TMDB api. It shows you latest tv shows and movies and let's you search through them.
-            </p>
-            <div class="extra">
-              <div class="tech-stack">
-                <button class="tech-item">vue.js</button>
-                <button class="tech-item">netlify</button>
+        </div> -->
+          <div>
+            <div class="work-item">
+              <h3 class="title">Watch Next</h3>
+              <p class="description">
+                Watch Next is a web app that is built using vue.js and TMDB api.
+                It shows you latest tv shows and movies and let's you search
+                through them.
+              </p>
+              <div class="extra">
+                <div class="tech-stack">
+                  <button class="tech-item">vue.js</button>
+                  <button class="tech-item">netlify</button>
+                </div>
+                <a class="app-url" href="https://watch-next.netlify.com">
+                  Live Project
+                </a>
               </div>
-              <a class="app-url" href="https://watch-next.netlify.com">
-                Live Project
-              </a>
             </div>
           </div>
-        </div>
-        <div>
-          <div class="work-item">
-            <h3 class="title">Pick Color</h3>
-            <p class="description">
-              Pick Color is a React app which is built using native state management in React. It let's the user draw on a canvas
-              with any of his choosen colors.
-            </p>
-            <div class="extra">
-              <div class="tech-stack">
-                <button class="tech-item">react.js</button>
+          <div>
+            <div class="work-item">
+              <h3 class="title">Pick Color</h3>
+              <p class="description">
+                Pick Color is a React app which is built using native state
+                management in React. It let's the user draw on a canvas with any
+                of his choosen colors.
+              </p>
+              <div class="extra">
+                <div class="tech-stack">
+                  <button class="tech-item">react.js</button>
+                </div>
+                <a
+                  class="app-url"
+                  href="https://vyasriday.github.io/react-pick-color"
+                >
+                  Live Project
+                </a>
               </div>
-              <a class="app-url" href="https://vyasriday.github.io/react-pick-color">
-                Live Project
-              </a>
             </div>
           </div>
-        </div>
-        <div>
-          <div class="work-item">
-            <h3 class="title">React-Tube</h3>
-            <p class="description">
-              react-tube is a minimal implementation of youtube in react.js. The project is still in progress.
-            </p>
-            <div class="extra">
-              <div class="tech-stack">
-                <button class="tech-item">react.js</button>
+          <!-- <div>
+            <div class="work-item">
+              <h3 class="title">React-Tube</h3>
+              <p class="description">
+                react-tube is a minimal implementation of youtube in react.js.
+                The project is still in progress.
+              </p>
+              <div class="extra">
+                <div class="tech-stack">
+                  <button class="tech-item">react.js</button>
+                </div>
+                <a
+                  class="app-url"
+                  href="https://vyasriday.github.io/react-tube/"
+                >
+                  Live Project
+                </a>
               </div>
-              <a class="app-url" href="https://vyasriday.github.io/react-tube/">
-                Live Project
-              </a>
+            </div>
+          </div> -->
+          <div>
+            <div class="work-item">
+              <h3 class="title">Read It</h3>
+              <p class="description">
+                Read It is an Angular app that let's you read top headlines from
+                all around the world. The App uses <code>newsapi.org</code> api
+                to fetch data.
+              </p>
+              <div class="extra">
+                <div class="tech-stack">
+                  <button class="tech-item">angular</button>
+                  <button class="tech-item">semantic-ui</button>
+                </div>
+                <a class="app-url" href="https://vyasriday.github.io/read-it">
+                  Live Project
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div>
-          <div class="work-item">
-            <h3 class="title">Read It</h3>
-            <p class="description">
-              Read It is an Angular app that let's you read top headlines from all around the world.
-              The App uses <code>newsapi.org</code> api to fetch data.
-            </p>
-            <div class="extra">
-              <div class="tech-stack">
-                <button class="tech-item">angular</button>
-                <button class="tech-item">semantic-ui</button>
-              </div>
-              <a class="app-url" href="https://vyasriday.github.io/read-it">
-                Live Project
-              </a>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="work-item">
-            <h3 class="title">Landscape Change Monitoring System</h3>
-            <p class="description">A web app where you can look for changes in the Indian landscape that happened over the
-              years. The app is consumes Bhuvan Maps API.</p>
+          <div>
+            <div class="work-item">
+              <h3 class="title">Landscape Change Monitoring System</h3>
+              <p class="description">
+                A web app where you can look for changes in the Indian landscape
+                that happened over the years. The app is consumes Bhuvan Maps
+                API.
+              </p>
               <div class="extra">
                 <div class="tech-stack">
                   <button class="tech-item">bootstrap</button>
@@ -140,48 +185,72 @@
                   Live Project
                 </a>
               </div>
+            </div>
           </div>
-        </div>
-        <div>
-          <div class="work-item">
-            <h3 class="title">Teleapp</h3>
-            <p class="description">Teleapp is a web app that uses OMDB API to fetch the tv and movies data and display it to users.
-            </p>
-            <div class="extra">
-              <div class="tech-stack">
-                <button class="tech-item">nodejs</button>
-                <button class="tech-item">ejs</button>
-                <button class="tech-item">bootstrap</button>
+          <!-- <div>
+            <div class="work-item">
+              <h3 class="title">Teleapp</h3>
+              <p class="description">
+                Teleapp is a web app that uses OMDB API to fetch the tv and
+                movies data and display it to users.
+              </p>
+              <div class="extra">
+                <div class="tech-stack">
+                  <button class="tech-item">nodejs</button>
+                  <button class="tech-item">ejs</button>
+                  <button class="tech-item">bootstrap</button>
+                </div>
+                <a class="app-url" href="https://hriday-teleapp.herokuapp.com/">
+                  Live Project
+                </a>
               </div>
-              <a class="app-url" href="https://hriday-teleapp.herokuapp.com/">
-                Live Project
-              </a>
+            </div>
+          </div> -->
+          <div>
+            <div class="work-item">
+              <h3 class="title">CSS Animations</h3>
+              <p class="description">
+                CSS Animations is a fun project that I do to learn more about
+                CSS animations and how I can implement them.
+              </p>
+              <div class="extra">
+                <div class="tech-stack">
+                  <button class="tech-item">css</button>
+                  <button class="tech-item">css3 animations</button>
+                </div>
+                <a
+                  class="app-url"
+                  href="https://vyasriday.github.io/css-animations-practice/"
+                >
+                  Live Project
+                </a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="work-item">
+              <h3 class="title">2020 Visualizer</h3>
+              <p class="description">
+                See how much time has already been passed. Make use of what's
+                left
+              </p>
+              <div class="extra">
+                <div class="tech-stack">
+                  <button class="tech-item">html</button>
+                  <button class="tech-item">javascript</button>
+                </div>
+                <a class="app-url" href="./pages/life_in_years.html">
+                  Live Project
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div>
-          <div class="work-item">
-            <h3 class="title">CSS Animations</h3>
-            <p class="description">CSS Animations is a fun project that I do to learn more about CSS animations and how I can implement them.
-            </p>
-            <div class="extra">
-              <div class="tech-stack">
-                <button class="tech-item">css</button>
-                <button class="tech-item">css3 animations</button>
-              </div>
-              <a class="app-url" href="https://vyasriday.github.io/css-animations-practice/">
-                Live Project
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer style="text-align: center" role="contentinfo">
-    <cite>&copy; Hridayesh Sharma 2019 - India </cite>
-  </footer>
-  <script src="./scripts/script.js"></script>
-</body>
-
+      </section>
+    </main>
+    <footer style="text-align: center;" role="contentinfo">
+      <cite>&copy; Hridayesh Sharma 2020 - India </cite>
+    </footer>
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>
