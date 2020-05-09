@@ -10,6 +10,11 @@ function createRadioButtons(year, parent) {
     div.classList.add('day');
     var checkbox = document.createElement('input');
     checkbox.checked = i < totalDaysTillToday ? true : false;
+    checkbox.disabled = i > totalDaysTillToday ? true : false;
+    checkbox.title =
+      i < totalDaysTillToday
+        ? 'No Longer Accessible 😅'
+        : 'You Still Got It 😃';
     checkbox.style.height = '20px';
     checkbox.style.width = '20px';
     checkbox.type = 'radio';
