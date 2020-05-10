@@ -14,13 +14,12 @@
         align-items: center;
         margin: 4px 6px;
       }
+      .day > input {
+        height: 24px;
+        width: 24px;
+      }
       .day > span {
         font-size: 12px;
-      }
-
-      .today {
-        background-color: steelblue;
-        padding: 4px 6px;
       }
 
       a {
@@ -31,6 +30,47 @@
         font-weight: 700;
         border-radius: 4px;
       }
+
+      .radio {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        position: relative;
+        border-radius: 300px;
+        outline: none;
+      }
+      .radio:checked::before {
+        position: absolute;
+        font: 13px/1 'Open Sans', sans-serif;
+        left: 9px;
+        top: 5px;
+        content: '\02143';
+        transform: rotate(40deg);
+      }
+      .radio-past {
+        background-color: #d62222;
+        color: rgb(255, 255, 255);
+      }
+
+      .radio-today {
+        background-color: #dc6414;
+      }
+
+      .radio-future {
+        background-color: #07f023;
+      }
+
+      .red {
+        color: #d62222;
+      }
+
+      .orange {
+        color: #dc6414;
+      }
+
+      .green {
+        color: #07f023;
+      }
     </style>
   </head>
   <body>
@@ -40,24 +80,33 @@
     <ul>
       <li>
         <h3>
-          Your Past is Gone, There is no way to access it. Don't waste your time
-          crying over it. You can't uncheck your past.
+          <span class="red">Past </span>is Gone, There is no way to
+          access it. Don't waste your time crying over it. You can't uncheck
+          your past.
+          <span class="red">That's the Red Zone</span>
         </h3>
       </li>
       <li>
         <h3>
-          Future is Yet To Come, but not necessarily. Don't live too much into
-          it. You can't check in to your future, but you can plan it.
+          <spanclass="green"> Future</spanclass=> is Yet To Come.You can't
+          check in to your future, but you can plan it.
+          <span class="green"> There is still Hope in Green</span>
         </h3>
       </li>
       <li>
         <h3>
-          Present is what you have access to. Each day spent wisely makes you
-          regret your past less and see your future better.
+          <span class="orange">Today</span> is what you have access to.
+          Each day spent wisely makes you regret your past less and see your
+          future better.
+          <span class="orange">That's the Orange Zone</span>
         </h3>
       </li>
     </ul>
-    <div style="display: flex; flex-wrap: wrap;" id="2020-container"></div>
+    <div 
+      style="display: flex; flex-wrap: wrap; padding: 8px 0px;" 
+      id="2020-container"
+    >
+    </div>
 
     <script src="../scripts/life_in_years.js"></script>
   </body>
