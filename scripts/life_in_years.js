@@ -59,4 +59,13 @@ function setRadioTitle(radio, current, totalDaysTillToday) {
   }
 }
 
+function isMobileDevice() {
+  return (
+    typeof window.orientation !== 'undefined' ||
+    navigator.userAgent.indexOf('IEMobile') !== -1
+  );
+}
+
+isMobileDevice() ? alert('Mobile Device') : 'Desktop Device';
+
 createRadioButtons(year, '2020-container');
