@@ -66,6 +66,6 @@ function isMobileDevice() {
   );
 }
 
-isMobileDevice() ? alert('Mobile Device') : 'Desktop Device';
+// isMobileDevice() ? alert('Mobile Device') : 'Desktop Device';
 
 createRadioButtons(year, '2020-container');
